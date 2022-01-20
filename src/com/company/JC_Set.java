@@ -7,7 +7,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class JC_Set {
-    public Set<String> setPrint() {
+    public void setPrint() {
         Set<String> hashSet = new HashSet<>();
         Set<String> linkedHashSet = new LinkedHashSet<>();
         Set<String> treeSet = new TreeSet<>();
@@ -69,6 +69,5 @@ public class JC_Set {
         difference.removeAll(set2);
         System.out.println(difference);
 
-        return null;
     }
 }

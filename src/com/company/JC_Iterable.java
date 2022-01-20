@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class JC_Iterable {
-    public Object iterablePrint() {
+    public void iterablePrint() {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
@@ -17,7 +17,7 @@ public class JC_Iterable {
         //Before Java 5
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
-            if(idx == 1) {
+            if (idx == 1) {
                 iterator.remove();
             }
             idx++;
@@ -25,11 +25,8 @@ public class JC_Iterable {
         System.out.println(list);
 
         //Java 5
-        for(int x : list){
+        for (int x : list) {
             System.out.println(x);
         }
-
-
-        return null;
     }
 }

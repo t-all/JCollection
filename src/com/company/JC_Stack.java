@@ -3,7 +3,7 @@ package com.company;
 import java.util.Stack;
 
 public class JC_Stack {
-    public Object stackPrint() {
+    public void stackPrint() {
         Stack<Integer> stack = new Stack<>();
 
         stack.push(5);
@@ -18,6 +18,5 @@ public class JC_Stack {
         while (!stack.empty()) {
             System.out.println(stack.pop());
         }
-        return null;
     }
 }

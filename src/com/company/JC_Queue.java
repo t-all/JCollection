@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class JC_Queue {
-    public Object queuePrint() {
+    public void queuePrint() {
         Chelovek chelovek1 = new Chelovek(1);
         Chelovek chelovek2 = new Chelovek(2);
         Chelovek chelovek3 = new Chelovek(3);
@@ -24,9 +24,9 @@ public class JC_Queue {
         System.out.println(people.peek());
         System.out.println(people);
 
-        return null;
     }
 }
+
 class Chelovek {
     private int id;
 

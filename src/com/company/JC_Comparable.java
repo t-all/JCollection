@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 public class JC_Comparable {
 
-    public Object comparablePrint() {
+    public void comparablePrint() {
         List<People> peopleList = new ArrayList<>();
         Set<People> peopleSet = new TreeSet<>();
 
@@ -17,8 +17,6 @@ public class JC_Comparable {
 
         System.out.println(peopleList);
         System.out.println(peopleSet);
-
-        return null;
 
     }
 

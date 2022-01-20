@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class JC_HashMap {
 
-    public Map<Integer, String> hashMapPrint() {
+    public void hashMapPrint() {
         Map<Integer, String> map = new HashMap<>();
 
         map.put(1, "Один");
@@ -15,9 +15,5 @@ public class JC_HashMap {
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-
-        return map;
-
     }
-
 }

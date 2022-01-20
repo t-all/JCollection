@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public class JC_TreeMap_LinkedHashMap {
 
-    public Map<Integer, String> printTL() {
+    public void printTL() {
 
         Map<Integer, String> hashMap = new HashMap<>(); // внутри не гарантируется порядок пар
         Map<Integer, String> linkedHashMap = new LinkedHashMap<>(); // в каком порядке пары ключ/значение в таком и вернутся
@@ -17,8 +17,6 @@ public class JC_TreeMap_LinkedHashMap {
 //        testMap(linkedHashMap);
         testMap(treeMap);
 
-
-        return null;
     }
 
     public static void testMap(Map<Integer, String> map) {
@@ -29,7 +27,7 @@ public class JC_TreeMap_LinkedHashMap {
         map.put(0, "Tim");
         map.put(431, "Bob");
 
-        for(Map.Entry<Integer, String> entry : map.entrySet()) {
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }

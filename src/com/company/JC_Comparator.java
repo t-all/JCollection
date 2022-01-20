@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class JC_Comparator {
-    public Object comparatorPrint() {
+    public void comparatorPrint() {
         List<String> animals = new ArrayList<>();
 
         animals.add("cat");
@@ -18,7 +18,7 @@ public class JC_Comparator {
         Collections.sort(animals, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
-                if(o1.length() > o2.length()) {
+                if (o1.length() > o2.length()) {
                     return 1;
                 } else if (o1.length() < o2.length()) {
                     return -1;
@@ -38,7 +38,7 @@ public class JC_Comparator {
         Collections.sort(numbers, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
-                if(o1 > o2) {
+                if (o1 > o2) {
                     return -1;
                 } else if (o1 < o2) {
                     return 1;
@@ -57,10 +57,10 @@ public class JC_Comparator {
         Collections.sort(persons, new Comparator<Persons>() {
             @Override
             public int compare(Persons o1, Persons o2) {
-                if(o1.getId() > o2.getId()) {
+                if (o1.getId() > o2.getId()) {
                     return 1;
                 } else if (o1.getId() < o2.getId()) {
-                    return  -1;
+                    return -1;
                 } else {
                     return 0;
                 }
@@ -68,8 +68,7 @@ public class JC_Comparator {
         });
 
         System.out.println(persons);
-        
-        return null;
+
     }
 }
 

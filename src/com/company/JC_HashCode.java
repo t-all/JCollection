@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class JC_HashCode {
 
-    public Object hashCodePrint() {
+    public void hashCodePrint() {
         Map<Person, String> map = new HashMap<>();
         Set<Person> set = new HashSet<>();
 
@@ -28,14 +28,11 @@ public class JC_HashCode {
         HashMap<String, Integer> map1 = new HashMap<>();
         map1.put("KING", 100);
 
-        System.out.println(15&"KING".hashCode());
-
+        System.out.println(15 & "KING".hashCode());
 
         System.out.println("KING".hashCode());
 
-        return null;
     }
-
 }
 
 class Person {
@@ -72,5 +69,4 @@ class Person {
         result = 31 * result + name.hashCode();
         return result;
     }
-
 }

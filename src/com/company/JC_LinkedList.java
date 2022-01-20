@@ -1,13 +1,12 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 public class JC_LinkedList {
 
-    public List<Integer> linkedListPrint() {
+    public void linkedListPrint() {
 
         List<Integer> linkedList = new LinkedList<>();
         List<Integer> arrayList = new ArrayList<>();
@@ -15,7 +14,6 @@ public class JC_LinkedList {
         measureTime(linkedList);
         measureTime(arrayList);
 
-        return Collections.singletonList(1);
     }
 
     public void measureTime(List<Integer> list) {
